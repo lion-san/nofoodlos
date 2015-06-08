@@ -12,23 +12,67 @@
                     return;
                 }
                  
-                document.getElementById("imageFile").addEventListener("change", function(){
+
+                //Preview1
+                document.getElementById("imageFile1").addEventListener("change", function(){
                     var reader = new FileReader();
-                     
                     reader.onload = function(event){
-                        document.getElementById("image").src = reader.result;
+                        document.getElementById("image1").src = reader.result;
                     }
-                    var file = document.getElementById("imageFile").files[0];
+                    var file = document.getElementById("imageFile1").files[0];
                     reader.readAsDataURL(file);
                 }, true);
+
+                //Preview2
+                document.getElementById("imageFile2").addEventListener("change", function(){
+                    var reader = new FileReader();
+                    reader.onload = function(event){
+                        document.getElementById("image2").src = reader.result;
+                    }
+                    var file = document.getElementById("imageFile2").files[0];
+                    reader.readAsDataURL(file);
+                }, true);
+
+                //Preview3
+                document.getElementById("imageFile3").addEventListener("change", function(){
+                    var reader = new FileReader();
+                    reader.onload = function(event){
+                        document.getElementById("image3").src = reader.result;
+                    }
+                    var file = document.getElementById("imageFile3").files[0];
+                    reader.readAsDataURL(file);
+                }, true);
+
+                //Preview4
+                document.getElementById("imageFile4").addEventListener("change", function(){
+                    var reader = new FileReader();
+                    reader.onload = function(event){
+                        document.getElementById("image4").src = reader.result;
+                    }
+                    var file = document.getElementById("imageFile4").files[0];
+                    reader.readAsDataURL(file);
+                }, true);
+
+
             }, true);
         </script>
     </head>
      
     <body>
-        <form>
-            <input type="file" accept="image/*;capture=camera" id="imageFile"/>
-        </form>
+      <form>
+          <input type="file" accept="image/*;capture=camera" id="imageFile1"/>
+          <input type="file" accept="image/*;capture=camera" id="imageFile2"/>
+          <input type="file" accept="image/*;capture=camera" id="imageFile3"/>
+          <input type="file" accept="image/*;capture=camera" id="imageFile4"/>
+      </form>
+
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+      </button>
+
+      <img id="image1"width="200" height="200">
+      <img id="image2"width="200" height="200">
+      <img id="image3"width="200" height="200">
+      <img id="image4"width="200" height="200">
     </body>
-    <img id="image"width="200" height="200">
 </html>
