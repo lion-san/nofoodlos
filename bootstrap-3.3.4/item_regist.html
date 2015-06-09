@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>商品登録</title>
 
@@ -98,7 +98,7 @@ var onClickAddBtn4 = function(){
 
     <!--  ================================== USER AREA START ================================== -->
 
-      <form style="visibility:hidden">
+      <form style="display:none;">
           <input type="file" accept="image/*;capture=camera" id="imageFile1"/>
           <input type="file" accept="image/*;capture=camera" id="imageFile2"/>
           <input type="file" accept="image/*;capture=camera" id="imageFile3"/>
@@ -106,49 +106,82 @@ var onClickAddBtn4 = function(){
       </form>
 
       <div class="row">
-      <div class="col-xs-3">
-        <div class="thumbnail">
-        <img id="image1" src="images/add_picture.png" onclick="onClickAddBtn1();">
+        <div class="col-xs-3">
+          <div class="thumbnail">
+          <img id="image1" src="images/add_picture.png" onclick="onClickAddBtn1();">
+          </div>
         </div>
-      </div>
-      <div class="col-xs-3">
-        <div class="thumbnail">
-        <img id="image2" src="images/add_picture.png" onclick="onClickAddBtn2();">
+        <div class="col-xs-3">
+          <div class="thumbnail">
+          <img id="image2" src="images/add_picture.png" onclick="onClickAddBtn2();">
+          </div>
         </div>
-      </div>
-      <div class="col-xs-3">
-        <div class="thumbnail">
-        <img id="image3" src="images/add_picture.png" onclick="onClickAddBtn3();">
+        <div class="col-xs-3">
+          <div class="thumbnail">
+          <img id="image3" src="images/add_picture.png" onclick="onClickAddBtn3();">
+          </div>
         </div>
-      </div>
-      <div class="col-xs-3">
-        <div class="thumbnail">
-        <img id="image4" src="images/add_picture.png" onclick="onClickAddBtn4();">
+        <div class="col-xs-3">
+          <div class="thumbnail">
+          <img id="image4" src="images/add_picture.png" onclick="onClickAddBtn4();">
+          </div>
         </div>
-      </div>
       </div>
 
 
       <div class="row">
-          <div class="col-md-12">
+        
+         <div class="col-md-12">
+            <ul class="list-group">
+              <h4>商品名と説明</h4>
+              <li class="list-group-item">
+                <input type="text" class="form-control" placeholder="商品名（必須 40文字まで）">
+              </li>
+              <li class="list-group-item">
+                <textarea style="height:150px" class="form-control"  placeholder="商品の説明（必須 1,000文字以内）
+（色、素材、重さ、定価、注意点など）
+                  
+ 例）2015/4/3に100円で購入した乾パンです。未開封です。賞味期限は2020/2/1までです。"></textarea>
+              </li>
+            </ul>
+         </div>        
+        
+        
+        
+         <div class="col-md-12">                        
             <ul class="list-group">
               <h4>商品の詳細</h4>
-              <li class="list-group-item">カテゴリー</li>
-              <li class="list-group-item">商品の状態</li>
+              <a href="#" class="list-group-item">カテゴリー<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+              <a href="#" class="list-group-item">商品の状態<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
             </ul>
-          </div>
+         </div>
 
-          <div class="col-md-12">
+         <div class="col-md-12">
             <ul class="list-group">
               <h4>価格</h4>
               <div class="input-group">
                 <span class="input-group-addon">P</span>
-                <input type="text" class="form-control" placeholder="0" >
+                <input type="text" class="form-control" placeholder="0"style="text-align:right;">
                 <span class="input-group-addon">point.</span>
               </div>
             </ul>
-          </div>
+         </div>
+         <br>
+         <div class="col-md-1">
+         </div>           
+         <div class="col-md-10">
+           <a>禁止されている出品</a>、<a>行為</a>を必ず確認ください。またブランド品で
+           シリアルナンバー等がある場合はご記載ください。<a>偽ブランド</a>の
+           販売は犯罪で処罰される可能性があります。
+         </div>
+         <div class="col-md-1">
+         </div>           
+         <br><br>
+         <div class="col-md-12">
+             <button type="button" class="btn-lg btn-danger btn-block">出品する</button>
+         </div>
       </div>
+      <br><br><br>
 
 
 
