@@ -1,3 +1,7 @@
 .price {
   text-align:right;
 }
+
+.must {
+  color: darkgray;
+}
