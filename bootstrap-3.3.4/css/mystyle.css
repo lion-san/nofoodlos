@@ -5,3 +5,24 @@
 .must {
   color: darkgray;
 }
+
+div#item_regist {  
+    position: fixed !important;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 64px;  
+    height: 64px;  
+    background-color: orangered;  
+    color: #fff;  
+}
+
+button#item_regist {  
+    position: fixed !important;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 64px;  
+    height: 64px;  
+
+} 
