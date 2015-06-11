@@ -6,13 +6,29 @@
   color: darkgray;
 }
 
+span.info {
+  font-size: 2.0em;
+}
+
+span.camera {
+  font-size: 2.0em;
+}
+
+div.camera {
+  text-align: center; 
+}
+
+span.info-badge {
+  top: -34px;
+}
+
 div#item_regist {  
     position: fixed !important;  
     position: absolute;
     bottom: 0;
     width: 64px;  
     height: 64px;  
-    background-color: greenyellow;  
+    background-color: #8CC152;  
     color: #fff;
     right: 10px;
 }
