@@ -105,7 +105,9 @@
           <input type="file" accept="image/*;capture=camera" id="imageFile4"/>
       </form>
 
-      <!--div class="row"-->
+    <div class="container">
+      
+      <div class="row">
         <div class="col-xs-3">
           <div class="thumbnail">
           <img id="image1" src="images/add_picture.png" onclick="onClickAddBtn1();">
@@ -126,11 +128,10 @@
           <img id="image4" src="images/add_picture.png" onclick="onClickAddBtn4();">
           </div>
         </div>
-      <!--/div-->
+      </div>
+      
 
-
-      <!--div class="row"-->
-        
+      <div class="row">
          <div class="col-md-12">
             <ul class="list-group">
               <h4>商品名と説明</h4>
@@ -144,10 +145,11 @@
  例）2015/4/3に100円で購入した乾パンです。未開封です。賞味期限は2020/2/1までです。"></textarea>
               </li>
             </ul>
-         </div>        
+         </div>
+      </div>
         
         
-        
+        <div class="row">
          <div class="col-md-12">                        
             <ul class="list-group">
               <h4>商品の詳細</h4>
@@ -159,7 +161,7 @@
          <div class="col-md-12">
             <ul class="list-group">
               <h4>交換方法</h4>
-              <a href="./item_category.html" class="list-group-item">交換方法を選択<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span><p class="pull-right must">（必須）</p></a>
+              <a href="./item_exchange.html" class="list-group-item">交換方法を選択<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span><p class="pull-right must">（必須）</p></a>
             </ul>
          </div>         
 
@@ -173,20 +175,25 @@
               </div>
             </ul>
          </div>
-                 
-         <br>
-         </div>           
+        </div>
+            
+      <br> 
+      <div class="row">
          <div class="col-md-10">
            <a>禁止されている出品</a>、<a>行為</a>を必ず確認ください。またブランド品で
            シリアルナンバー等がある場合はご記載ください。<a>偽ブランド</a>の
            販売は犯罪で処罰される可能性があります。
          </div>     
-         <br><br>
+         <div class="col-md-12">
+           <br><br>
+         </div>
          <div class="col-md-12">
              <button type="button" class="btn-lg btn-danger btn-block" onclick="location.href='./items.html'">出品する</button>
          </div>
-         
-      <!--/div-->
+      </div>
+      
+    </div><!-- container -->
+    
       <br><br><br>
 
     <!--  ================================== USER AREA END ================================== -->
