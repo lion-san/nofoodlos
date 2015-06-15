@@ -18,16 +18,41 @@
    <!-- mystyle css -->
     <link rel="stylesheet" href="css/mystyle.css">
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- jQuery Mobile -->
+    <!--script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
+    
+    <!-- items.js -->
+    <script src="js/items.js"></script>
+
+    <!-- popovar -->
+    <script>
+      $("a[data-toggle=popover]").popover();
+    </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+
   </head>
   <body>
 
+
+
 <div class="container">
+  <a href="javascript:void(0);" data-toggle="popover" data-html="true" data-placement="bottom"
+   data-title="Aipo.comのSプランに登録します。" 
+   data-content="このプランでは期間やユーザー数など無制限に、完全無料でご利用いただけます。">
+   この登録により何ができますか？</a>
+  
   <div class="row">
 
     <!-- Navibar -->
@@ -150,17 +175,5 @@
 
   </div><!-- row -->
 </div><!-- container -->
-    
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- jQuery Mobile -->
-    <!--script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
-    
-    <!-- items.js -->
-    <script src="js/items.js"></script>
   </body>
 </html>

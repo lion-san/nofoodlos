@@ -12,3 +12,4 @@ $(window).scroll(function() {
 		$("#item_regist").fadeIn("slow");
     }, 2000);
 });
+
