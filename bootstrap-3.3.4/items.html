@@ -31,7 +31,9 @@
 
     <!-- popovar -->
     <script>
-      $("a[data-toggle=popover]").popover();
+      $(function() {
+        $('[rel=popover]').popover();
+      });
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,10 +50,8 @@
 
 
 <div class="container">
-  <a href="javascript:void(0);" data-toggle="popover" data-html="true" data-placement="bottom"
-   data-title="Aipo.comのSプランに登録します。" 
-   data-content="このプランでは期間やユーザー数など無制限に、完全無料でご利用いただけます。">
-   この登録により何ができますか？</a>
+   
+   
   
   <div class="row">
 
@@ -73,7 +73,11 @@
 
 
                       <p class="navbar-text">
-                        <span class="glyphicon glyphicon-send info" aria-hidden="false"></span>
+                        <a href="javascript:void(0);" data-toggle="popover" title="Popover title" rel="popover"
+                          data-content="And here's some amazing content. It's very engaging. Right?"
+                          data-html="true" data-placement="bottom">
+                            <span class="glyphicon glyphicon-send info" aria-hidden="false"></span>
+                        </a>
                         <span class="badge badge-danger">222</span>
                       </p>
 
