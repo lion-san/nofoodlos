@@ -32,3 +32,8 @@ div#item_regist {
     color: #fff;
     right: 10px;
 }
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+}
