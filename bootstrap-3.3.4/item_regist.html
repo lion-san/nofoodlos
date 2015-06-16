@@ -18,7 +18,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Datepicker -->
-    <link href="css/bootstrap-datepicker.css"  rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
     <script src="js/bootstrap-datepicker.js"></script>
     <script  src="js/bootstrap-datepicker.ja.js"></script>
 
@@ -106,7 +106,9 @@
         $(function() {
             $('#dp1').datepicker({
                 format: 'yyyy/mm/dd',
-                language: 'ja'     // カレンダー日本語化のため
+                language: 'ja',
+	              autoclose: true,
+	              clearBtn: true 
             });
         });
       </script>
@@ -185,7 +187,7 @@
             <ul class="list-group">
               <h4>交換日付</h4>
             <ul class="list-group">
-              <input id="dp1" maxlength="10" type="text">
+              <input id="dp1" maxlength="10" type="text" readonly="readonly">
             </ul>
          </div>         
 
