@@ -10,6 +10,6 @@ $(window).scroll(function() {
     timer = setTimeout(function() {
         console.log('scroll');
 		$("#item_regist").fadeIn("slow");
-    }, 2000);
+    }, 1500);
 });
 
